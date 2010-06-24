@@ -3,8 +3,6 @@ from turbogears import identity
 
 # FIXME change to correct path
 # from (application path to python_tracker folder).python_tracker.track import *
-from whatever.tg.misc import base_url
-from knowledgeplaza.release import api_version
 
 import logging
 log = logging.getLogger(__name__)
