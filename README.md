@@ -43,12 +43,12 @@ Level order is DEBUG < INFO < DEFAULT < NONE.
 
 In a nutshell:
 
-1. Create a tracker object in your module import section:
+Create a tracker object in your module import section:
 
 	(application path to python_tracker folder).python_tracker.track import track
 	tr = track.getTracker(__name__)
 
-2. For every function you want to track decorate with probe method:
+For every function you want to track decorate with probe method:
 
 	@tr.probe(level=DEFAULT, fname=None, inc=None, exc=None)
 	level: logging level for function, if this level is lower than the one specified in RootTracker this function and the ones called by it are ignored.
