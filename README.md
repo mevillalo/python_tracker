@@ -45,7 +45,7 @@ In a nutshell:
 
 Create a tracker object in your module import section:
 
-	(application path to python_tracker folder).python_tracker.track import track
+	(application path to python_tracker folder).python_tracker import track
 	tr = track.getTracker(__name__)
 
 For every function you want to track decorate with probe method:
