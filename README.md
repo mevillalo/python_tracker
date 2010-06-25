@@ -79,9 +79,12 @@ In order to add info:
 
 	tr.add_info(key, value)
 	
+Remember that info keys must correspond to database log table columns when using database handling.
+	
 In order to add data:
 
 	tr.add_data(key, value, depth=None)
+	depth: is used to specify another depth (different from function depth in call hierarchy)
 	
 You can also add info or data in the extend_log method in the augment.py file. Take a look at the file for more details.
 
